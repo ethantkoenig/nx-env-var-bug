@@ -1,0 +1,14 @@
+{
+  "name": "foo",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "foo/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project foo --web",
+  "echo-env-var": {
+    "executor": "nx:run-commands",
+    "options": {
+      "command": "echo $ENV_VAR"
+    }
+  }
+}
